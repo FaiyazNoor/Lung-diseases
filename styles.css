@@ -26,7 +26,6 @@ body {
   opacity: 100; /* Set initial opacity to 0 */
 }
 
-
 .animate {
   opacity: 0;
   transform: translateY(20px);
@@ -53,4 +52,11 @@ body {
 
 .upload-icon:hover {
   background-color: rgb(255, 94, 0);
+}
+
+.result-paragraph {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  margin-top: 20px;
+  font-weight: bold;
 }
