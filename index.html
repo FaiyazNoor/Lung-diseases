@@ -2,32 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Respiratory Health Center</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Respiratory Health Center</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="image-container animate" data-delay="0.2s">
-      <img src="—Pngtree—human lungs anatomy vector illustration_5296521.png" alt="Lungs">
+    <div class="container">
+        <div class="image-container animate" data-delay="0.2s">
+            <img src="G:\Design_lab_2\Respiratory_Sound_Database\Respiratory_Sound_Database\—Pngtree—human lungs anatomy vector illustration_5296521.png"
+                alt="Lungs">
+        </div>
+
+        <div class="content-container">
+            <h2 class="animate" data-delay="0.2s">Welcome to the</h2>
+            <h1 class="animate" style="color: orange;" data-delay="0.4s">Respiratory Disease Detection Center</h1>
+            <p class="animate" data-delay="0.7s">Explore the world of respiratory health. From chronic conditions like asthma and
+                COPD to infectious ailments such as pneumonia and bronchitis, we provide insights into various respiratory
+                disorders. Learn about early detection, proper management, and lifestyle choices that promote lung
+                function.</p>
+
+            <div id="upload-container" class="animate" data-delay="0.2s">
+                <label for="audioFile" class="upload-icon">&#8679; Upload your respiratory audio file</label>
+                <input type="file" id="audioFile" accept=".wav" style="display: none;" onchange="handleFileUpload()">
+                <p id="upload-text">Please upload a respiratory audio file for analysis</p>
+            </div>
+
+            <p id="result" class="result-paragraph"></p>
+        </div>
     </div>
 
-    <div class="content-container">
-      <h2 class="animate" data-delay="0.2s">Welcome to the</h2>
-      <h1 class="animate" style="color: orange;" data-delay="0.4s">Respiratory Disease Detection Center</h1>
-      <p class="animate" data-delay="0.7s">Explore the world of respiratory health. From chronic conditions like asthma and COPD to infectious ailments such as pneumonia and bronchitis, we provide insights into various respiratory disorders. Learn about early detection, proper management, and lifestyle choices that promote lung function.</p>
-
-      <div id="upload-container" class="animate" data-delay="0.2s">
-        <label for="audioFile" class="upload-icon">&#8679; Upload your respiratory audio file</label>
-        <input type="file" id="audioFile" accept=".wav" style="display: none;">
-        <p id="upload-text">Please upload a respiratory audio file for analysis</p>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
